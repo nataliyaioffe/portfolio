@@ -1,0 +1,53 @@
+
+header {
+    // width: 100%;
+  height: 100vh;
+
+  padding: 25px 0;
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to top, $black, $black);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+ 
+    i {
+        font-size: 2.5rem;
+        color: $white;
+    }
+}
+
+
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      text-transform: lowercase;
+      margin: 0 15px;
+    }
+    a {
+        color: white;
+        position: relative;
+        &:hover:after {
+            color: $accent;
+        }
+    }
+  }
+}
+
+header a::after {
+    content: ".";
+    font-family: "Sedgwick Ave Display", cursive;
+    font-size: 8rem;
+    position: absolute;
+    top: -20px;
+    left: 42%;
+    color: transparent;
+}

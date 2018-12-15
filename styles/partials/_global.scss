@@ -1,0 +1,30 @@
+$white: #faf9f9;
+$accent: lightseagreen;
+$transaccent: rgba(32, 178, 170, 0.5);
+$black: #000000;
+$transwhite: rgba(255, 255, 255, 0.4);
+$transblack: rgba(0, 0, 0, 0.8);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #cccccc;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%; 
+  max-width: 100%; 
+  display: block;
+}

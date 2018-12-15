@@ -140,9 +140,269 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 a {
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
+/* /END GENERAL STYLING */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #cccccc;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto; }
+
 img {
   width: 100%;
   max-width: 100%;
   display: block; }
 
-/* /END GENERAL STYLING */
+h1 {
+  color: white;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 8rem;
+  text-transform: lowercase;
+  line-height: 1;
+  margin: 0 50px;
+  display: inline;
+  letter-spacing: 1px; }
+
+span {
+  color: lightseagreen; }
+
+h2,
+h3,
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700; }
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+h3 {
+  margin-bottom: 20px; }
+
+header {
+  height: 100vh;
+  padding: 25px 0;
+  position: relative;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#000000));
+  background-image: -webkit-linear-gradient(bottom, #000000, #000000);
+  background-image: -o-linear-gradient(bottom, #000000, #000000);
+  background-image: linear-gradient(to top, #000000, #000000);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  position: relative; }
+  header i {
+    font-size: 2.5rem;
+    color: #faf9f9; }
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  nav ul li {
+    text-transform: lowercase;
+    margin: 0 15px; }
+  nav ul a {
+    color: white;
+    position: relative; }
+    nav ul a:hover:after {
+      color: lightseagreen; }
+
+header a::after {
+  content: ".";
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 8rem;
+  position: absolute;
+  top: -20px;
+  left: 42%;
+  color: transparent; }
+
+#about,
+#skills,
+#projects,
+#contact {
+  padding: 50px 0; }
+
+#about {
+  background: #faf9f9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+  #about .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+  #about p {
+    width: 60%;
+    margin: 0 auto; }
+  #about img {
+    border-radius: 50%;
+    width: 200px; }
+
+#skills .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#skills i {
+  font-size: 8rem;
+  margin: 0 20px; }
+
+#skills img {
+  height: 80px;
+  display: inline-block;
+  margin: 0 30px; }
+
+#skills .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #skills .icons .fab,
+  #skills .icons .devicon-jquery-plain {
+    color: #faf9f9; }
+
+#projects {
+  background: #faf9f9; }
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  margin: 50px 0;
+  border: 1px solid black; }
+
+.project {
+  height: 60vh;
+  width: 50%; }
+  .project img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%; }
+
+.screenshot {
+  background: #cccccc; }
+
+.jquery {
+  fill: #faf9f9; }
+
+footer {
+  background: #000000;
+  color: #faf9f9;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding: 50px 0 25px 0; }
+  footer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 45%;
+    margin: 25px auto; }
+    footer form input, footer form textarea {
+      border: none;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.6); }
+      footer form input::-webkit-input-placeholder, footer form textarea::-webkit-input-placeholder {
+        text-align: center; }
+      footer form input:-ms-input-placeholder, footer form textarea:-ms-input-placeholder {
+        text-align: center; }
+      footer form input::-ms-input-placeholder, footer form textarea::-ms-input-placeholder {
+        text-align: center; }
+      footer form input::placeholder, footer form textarea::placeholder {
+        text-align: center; }
+      footer form input:hover, footer form textarea:hover {
+        background: rgba(255, 255, 255, 0.7); }
+    footer form input {
+      padding: 10px 20px; }
+    footer form textarea {
+      padding: 20px;
+      resize: none; }
+      footer form textarea:hover {
+        resize: auto; }
+  footer .email {
+    color: #faf9f9;
+    font-size: 2.5rem; }
+  footer .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 25px 0; }
+    footer .icons i {
+      color: rgba(32, 178, 170, 0.5);
+      border: 1px solid black;
+      padding: 10px;
+      margin: 0 5px;
+      font-size: 2.5rem;
+      -webkit-transition: 0.35s ease;
+      -o-transition: 0.35s ease;
+      transition: 0.35s ease; }
+      footer .icons i:hover {
+        color: lightseagreen;
+        border-color: rgba(255, 255, 255, 0.7); }
+  footer p {
+    color: rgba(255, 255, 255, 0.4); }

@@ -1,0 +1,87 @@
+//////// ABOUT ////////
+
+#about,
+#skills,
+#projects,
+#contact {
+  padding: 50px 0;
+}
+
+#about {
+  background: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p {
+    width: 60%;
+    margin: 0 auto;
+  }
+  img {
+    border-radius: 50%;
+    width: 200px;
+  }
+}
+
+//////// SKILLS ////////
+
+#skills {
+  .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  i {
+    font-size: 8rem;
+    margin: 0 20px;
+  }
+  img {
+    // width: 50px;
+    height: 80px;
+    display: inline-block;
+    margin: 0 30px;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    .fab,
+    .devicon-jquery-plain {
+      color: $white;
+    }
+  }
+}
+
+//////// PROJECTS ////////
+
+#projects {
+  background: $white;
+}
+
+.project-container {
+  display: flex;
+  padding: 25px;
+  margin: 50px 0;
+  border: 1px solid black;
+}
+.project {
+  height: 60vh;
+  width: 50%;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.screenshot {
+  background: #cccccc;
+}
+
+.jquery {
+  fill: $white;
+}

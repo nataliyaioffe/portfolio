@@ -1,0 +1,63 @@
+//////// FOOTER //////// 
+
+footer {
+  background: $black;
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 50px 0 25px 0;
+  form { 
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 25px auto;
+    input, textarea {
+      border: none;
+      margin-bottom: 10px;
+      background: rgba(255,255,255,0.6);
+        &::placeholder {
+          text-align: center;
+        }
+         &:hover{
+          background: rgba(255,255,255,0.7);
+        }
+      }
+      input {
+        padding: 10px 20px;
+      }
+      textarea {
+        padding: 20px;
+        resize: none;
+        &:hover {
+          resize: auto;
+        }
+       
+      }
+    }
+  .email {
+    color: $white;
+    font-size: 2.5rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    i {
+      color: $transaccent;
+      border: 1px solid black;
+      padding: 10px;
+      margin: 0 5px;
+      font-size: 2.5rem;
+      transition: 0.35s ease;
+      &:hover {
+        color: $accent;
+        border-color: rgba(255,255,255,0.7);
+      }
+    }
+  }
+  p {
+    color: $transwhite;
+  }
+}

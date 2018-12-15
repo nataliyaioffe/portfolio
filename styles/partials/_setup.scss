@@ -9,6 +9,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 a {text-decoration: none;}
 
-img {width: 100%; max-width: 100%; display: block;}
+ul {
+    list-style-type: none;
+}
 
 /* /END GENERAL STYLING */
