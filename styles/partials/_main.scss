@@ -1,45 +1,21 @@
+.content {
+    padding: 100px 0;
+    border-bottom: 2px solid $black;
+}
 //////// ABOUT ////////
 
-#about,
-#skills,
-#projects,
-#contact {
-  padding: 50px 0;
-}
-
 #about {
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  img {
-    border-radius: 50%;
-    width: 200px;
-  }
-}
-
-//////// SKILLS ////////
-
-#skills {
-    background: $white;
-  .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  i {
+ i {
     font-size: 5rem;
-    margin: 0 10px;
+    margin-right: 15px;
   }
   img {
     height: 80px;
     display: inline-block;
-    margin: 0 30px;
+    margin-right: 15px;
   }
   .icons {
     display: flex;
-    justify-content: center;
     .fab,
     .devicon-jquery-plain {
       color: $black;
