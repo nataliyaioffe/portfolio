@@ -12,13 +12,12 @@ header {
   position: relative;
   h1 {
     color: $black;
-    font-family: "Sedgwick Ave Display", cursive;
     font-size: 8rem;
-    text-transform: lowercase;
+    // text-transform: lowercase;
     line-height: 1;
-    margin: 0 50px;
-    display: inline;
-    letter-spacing: 1px;
+    margin: 10px 50px;
+    display: inline-block;
+    // letter-spacing: -2px;
   }
   i {
     font-size: 2.5rem;
@@ -47,10 +46,9 @@ nav {
 
 header a::after {
   content: ".";
-  font-family: "Sedgwick Ave Display", cursive;
   font-size: 8rem;
   position: absolute;
-  top: -20px;
-  left: 42%;
+  top: -35px;
+  left: 40%;
   color: transparent;
 }

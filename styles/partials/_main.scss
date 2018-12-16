@@ -1,7 +1,3 @@
-.content {
-    padding: 100px 0;
-    border-bottom: 2px solid $black;
-}
 //////// ABOUT ////////
 
 #about {
@@ -26,28 +22,56 @@
 //////// PROJECTS ////////
 
 #projects {
-  background: $white;
-}
-
-.project-container {
-  display: flex;
-  padding: 25px;
-  margin: 50px 0;
-  border: 1px solid black;
-}
-.project {
-  height: 60vh;
-  width: 50%;
-  img {
-    object-fit: cover;
-    height: 100%;
-  }
-}
-
-.screenshot {
-  background: #cccccc;
-}
-
-.jquery {
-  fill: $white;
+    text-align: center;
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    .project {
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        margin-bottom: 25px;
+        width: calc(50% - 20px);
+         &:nth-of-type(odd) {
+            margin-right: 40px;
+        }
+    }
+    .mockup {
+        background: lightgrey;
+        width: 100%;
+        height: 35vh;
+        position: relative;
+        &:after {
+            content:"";
+            position: absolute;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid transparent;
+            left: calc(50% - 15px);
+            top: 0;
+            transition: border-top .5s ease;
+        }
+        &:hover::after {
+            border-top: 15px solid $accent;
+        }
+    }
+    .description {
+        padding: 25px 0;
+        text-align: center;
+    }
+   .view {
+       color: $black;
+       font-weight: 700;
+       display:inline-block;
+       border: 1px solid black;
+       padding: 10px 0;
+       margin-right: 10px;
+       width: 80px;
+       text-align: center;
+       &:hover {
+           border-color: $accent;
+           background: lighten($accent, 25%);
+       }
+   }
 }

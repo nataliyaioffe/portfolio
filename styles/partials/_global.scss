@@ -1,5 +1,5 @@
 $white: #faf9f9;
-$accent: lightseagreen;
+$accent: salmon;
 $transaccent: rgba(32, 178, 170, 0.5);
 $black: #181717;
 $transwhite: rgba(255, 255, 255, 0.4);
@@ -23,8 +23,20 @@ body {
 }
 
 .content {
-    padding: 100px 0;
-    border-bottom: 2px solid $black;
+    padding: 75px 0;
+    border-bottom: 1px solid $accent;
+    position: relative;
+}
+
+.content::after {
+  content:"";
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid $accent;
+  left: calc(50% - 15px);
+  top: 100%;
+
 }
 
 img {

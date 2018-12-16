@@ -1,4 +1,4 @@
-//////// FOOTER //////// 
+//////// FOOTER ////////
 
 footer {
   color: $black;
@@ -9,14 +9,27 @@ footer {
   .content {
     border: none;
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
+    &::after {
+      display: none;
+    }
   }
   .email {
-    color: $black;
     font-size: 2rem;
     span {
       color: $grey;
     }
+  }
+  .top {
+    display:inline-block;
+    margin-top: 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .email,
+  .top {
+    color: $black;
   }
   .icons {
     display: flex;
@@ -35,13 +48,14 @@ footer {
     }
   }
   .copyright {
-    margin-top: 25px;
+    margin-top: 50px;
+    color: $grey;
   }
 }
 
 //// FORM
 
-form { 
+form {
   display: flex;
   flex-direction: column;
   width: 450px;
@@ -58,21 +72,23 @@ form {
     background: lighten($grey, 50%);
     // border-bottom: 1px solid lighten($grey, 35%);
     &:hover {
-      background: lighten($grey, 45%);
-
+      background: lighten($accent, 20%);
     }
-    &:focus{
-      background: lighten($grey, 45%);
+    &:focus {
+      background: lighten($accent, 15%);
     }
   }
-    textarea {
-      resize: none;
-      &:hover {
-        resize: auto;
-      }
+  textarea {
+    resize: none;
+    &:hover {
+      resize: auto;
     }
-    input[type="submit"] {
+  }
+  input[type="submit"] {
+    background: $grey;
+    color: $white;
+    &:hover {
       background: $black;
-      color: $white;
     }
   }
+}
