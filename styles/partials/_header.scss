@@ -1,27 +1,30 @@
-
 header {
-    // width: 100%;
+  background: $white;
+  color: $black;
   height: 100vh;
-
   padding: 25px 0;
   position: relative;
   text-align: center;
-  background-image: linear-gradient(to top, $black, $black);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   position: relative;
- 
-    i {
-        font-size: 2.5rem;
-        color: $white;
-    }
+  h1 {
+    color: $black;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-size: 8rem;
+    text-transform: lowercase;
+    line-height: 1;
+    margin: 0 50px;
+    display: inline;
+    letter-spacing: 1px;
+  }
+  i {
+    font-size: 2.5rem;
+    color: white;
+  }
 }
-
 
 nav {
   ul {
@@ -33,21 +36,21 @@ nav {
       margin: 0 15px;
     }
     a {
-        color: white;
-        position: relative;
-        &:hover:after {
-            color: $accent;
-        }
+      color: $black;
+      position: relative;
+      &:hover:after {
+        color: $accent;
+      }
     }
   }
 }
 
 header a::after {
-    content: ".";
-    font-family: "Sedgwick Ave Display", cursive;
-    font-size: 8rem;
-    position: absolute;
-    top: -20px;
-    left: 42%;
-    color: transparent;
+  content: ".";
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 8rem;
+  position: absolute;
+  top: -20px;
+  left: 42%;
+  color: transparent;
 }

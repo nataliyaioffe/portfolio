@@ -1,9 +1,10 @@
 $white: #faf9f9;
 $accent: lightseagreen;
 $transaccent: rgba(32, 178, 170, 0.5);
-$black: #000000;
+$black: #181717;
 $transwhite: rgba(255, 255, 255, 0.4);
 $transblack: rgba(0, 0, 0, 0.8);
+$grey: #646464;
 
 html {
   font-size: 62.5%;
@@ -12,19 +13,22 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Roboto Condensed", sans-serif;
-  background: #cccccc;
-  padding: 0 15px;
-  margin: 0 auto;
+  background: $white;
 }
 
 .wrapper {
-  max-width: 1280px;
-  width: 80%;
+  max-width: 800px;
+  width: 90vw;
   margin: 0 auto;
+  // border: 1px solid black;
 }
 
 img {
   width: 100%; 
   max-width: 100%; 
   display: block;
+}
+
+p {
+  line-height: 2.5rem;
 }
