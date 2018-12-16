@@ -128,7 +128,7 @@
     <footer>
       <div class="wrapper">
         <h2>Get In Touch</h2>
-        <a class="email" href="mailto:nxioffe@gmail.com">nxioffe [at] gmail [dot] com</a>
+        <a class="email" href="mailto:nxioffe@gmail.com">nxioffe <span>[at]</span> gmail <span>[dot]</span> com</a>
 
         <div class="icons">
           <i class="fab fa-twitter"></i> 
@@ -136,10 +136,14 @@
           <i class="fab fa-linkedin-in"></i>
         </div>
 
-        <form action="">
-          <input required type="text" placeholder="Your Name">
-          <input required type="email" placeholder="Your Email">
-          <textarea name="" id="" cols="30" rows="5" placeholder="What's up?"></textarea>
+        <form action="https://formspree.io/nxioffe@gmail.com" method="POST" />
+          <label for="name" class="visuallyhidden">Your Name</label>
+          <input id="name" name="name" required type="text" placeholder="Your Name">
+          <label for="email" class="visuallyhidden">Your Email</label>
+          <input id="email" name="email" required type="email" placeholder="Your Email">
+          <label for="email" class="visuallyhidden">Your Message</label>
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="What's up?"></textarea>
+          <input type="submit" value="Send">
         </form>
 
         <p>Nataliya Ioffe &copy; 2018</p>

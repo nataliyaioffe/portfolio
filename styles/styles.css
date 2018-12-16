@@ -133,6 +133,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -350,40 +363,11 @@ footer {
   flex-direction: column;
   position: relative;
   padding: 50px 0 25px 0; }
-  footer form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 45%;
-    margin: 25px auto; }
-    footer form input, footer form textarea {
-      border: none;
-      margin-bottom: 10px;
-      background: rgba(255, 255, 255, 0.6); }
-      footer form input::-webkit-input-placeholder, footer form textarea::-webkit-input-placeholder {
-        text-align: center; }
-      footer form input:-ms-input-placeholder, footer form textarea:-ms-input-placeholder {
-        text-align: center; }
-      footer form input::-ms-input-placeholder, footer form textarea::-ms-input-placeholder {
-        text-align: center; }
-      footer form input::placeholder, footer form textarea::placeholder {
-        text-align: center; }
-      footer form input:hover, footer form textarea:hover {
-        background: rgba(255, 255, 255, 0.7); }
-    footer form input {
-      padding: 10px 20px; }
-    footer form textarea {
-      padding: 20px;
-      resize: none; }
-      footer form textarea:hover {
-        resize: auto; }
   footer .email {
     color: #faf9f9;
     font-size: 2.5rem; }
+    footer .email span {
+      color: rgba(255, 255, 255, 0.4); }
   footer .icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,17 +376,41 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 25px 0; }
-    footer .icons i {
-      color: rgba(32, 178, 170, 0.5);
-      border: 1px solid black;
-      padding: 10px;
-      margin: 0 5px;
-      font-size: 2.5rem;
-      -webkit-transition: 0.35s ease;
-      -o-transition: 0.35s ease;
-      transition: 0.35s ease; }
-      footer .icons i:hover {
-        color: lightseagreen;
-        border-color: rgba(255, 255, 255, 0.7); }
+  footer i {
+    color: rgba(32, 178, 170, 0.5);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 2.5rem;
+    -webkit-transition: 0.35s ease;
+    -o-transition: 0.35s ease;
+    transition: 0.35s ease; }
+    footer i:hover {
+      color: lightseagreen;
+      border-color: rgba(255, 255, 255, 0.4); }
   footer p {
     color: rgba(255, 255, 255, 0.4); }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 450px;
+  margin: 25px auto; }
+  form input,
+  form textarea {
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.6); }
+    form input:hover,
+    form textarea:hover {
+      background: rgba(255, 255, 255, 0.7); }
+  form textarea {
+    resize: none; }
+    form textarea:hover {
+      resize: auto; }
