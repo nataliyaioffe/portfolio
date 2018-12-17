@@ -1,9 +1,9 @@
 $white: #faf9f9;
-$accent: salmon;
-$transaccent: rgba(32, 178, 170, 0.5);
+$transwhite: rgba(250, 249, 249,0.8);
 $black: #181717;
-$transwhite: rgba(255, 255, 255, 0.4);
 $transblack: rgba(0, 0, 0, 0.8);
+$accent: #fa8072;
+$transaccent: rgba(250, 128, 114,0.5);
 $grey: #646464;
 
 html {
@@ -12,6 +12,7 @@ html {
 
 body {
   background: $white;
+  text-align: center;
 }
 
 .wrapper {
@@ -21,20 +22,37 @@ body {
 }
 
 .content {
-    padding: 75px 0;
-    border-bottom: 1px solid $accent;
+    padding: 50px 30px;
     position: relative;
+    h2 {
+      margin: 25px 0;
+    }
 }
 
-.content::after {
-  content:"";
-  position: absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid $accent;
-  left: calc(50% - 15px);
-  top: 100%;
-
+#about, 
+#skills, 
+#projects {
+  .content::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid $black;
+  }
+  .content::after {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height:  10px;
+    background: black;
+    // border-left: 5px solid $black;
+    // border-right: 5px solid $black;
+    // border-top: 5px solid $black;
+    // border-bottom: 5px solid $black;
+    left: calc(50% - 5px);
+    bottom: -5px;
+  }
 }
 
 img {

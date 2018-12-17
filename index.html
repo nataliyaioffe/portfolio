@@ -23,23 +23,33 @@
       rel="stylesheet"
     />
  
-    <title>Nataliya Ioffe</title>
+    <title>Nataliya Ioffe - Web Developer</title>
   </head>
   <body id="home">
+    
+
     <header>
-      <div class="wrapper">
-        <h1>nataliya.<span>io</span>ffe</h1>
-        <h2>Web Developer</h2>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
+      <div id="top-bar">
+        <h1>Nataliya Ioffe</h1>
+        <nav class="main-nav">
+          <i class="hamburger fas fa-bars"></i>
+          <ul class="list">
+           <i class="exit fas fa-times"></i>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <i class="fas fa-angle-double-down"></i>
+      
       </div>
+      <div class="wrapper">
+          <span>nataliya.<span class="io">io</span>ffe</span>
+          <h2>Front-End Web Developer</h2>
+          <a href="#about"><i class="fas fa-angle-double-down"></i></a>
+      </div>
+
+      
+
     </header>
 
     <main>
@@ -47,78 +57,93 @@
       <section id="about">
         <div class="wrapper">
           <div class="content">
-            <p><strong>I'm a Front-End Web Developer based in Toronto.</strong>
-            I was trained in development at HackerYou College of Technology, and I have a Bachelor's in Media Arts & Design with a focus on Corporate Communciation.</p>
-            <p>I was born in Russia, grew up in Virginia, and spent most of my adult life in Los Angeles producing TV and dissecting movie scripts. <strong>But then... </strong>A transformative experience working at a tech start-up prompted me to make a big change. I'm now full-steam ahead in pursuing my passion for building memorable user experiences that make the world a better place, one click at a time.</p>
-            <p>I'm as adaptable as they come, and a genuine people person. Don't hestitate... <a href="mailto:nxioffe@mgail.com">let's chat!</a></p>
-            <h2>My Skills</h2>
-            <div class="icons">
-              <ul>
-                  <i class="fab fa-html5"></i> 
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i> 
-                  <i class="fab fa-sass"></i>
-                  <i class="fab fa-github"></i> 
-                  <i class="fab fa-react"></i>
-                  <i class="devicon-jquery-plain"></i>
-                  <img src="" alt="">
-              </ul>
-
-            </div>
+            <h2>Hey... Nice to meet you!</h2>
+            <p><strong>I'm a Front-End Web Developer based in Toronto. </strong>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College of Technology.</p>
+            <p>I previously grew up in rural Virginia in the States, and spent most of my adult life in Los Angeles running a TV production office. In LA I became inspired to code after a transformative experience working at an ultra-fast-paced tech startup.</p>
+            <p>After settling in Toronto, I'm full-steam ahead in pursuing my passion for building memorable user experiences that make the world a better place, one click at a time. <a href="mailto:nxioffe@mgail.com">Let's work together!</a></p>
           </div>
         </div>
       </section>
+      <section id="skills">
+        <div class="wrapper">
+          <div class="content">
+            <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Skills</h2>
+            <ul class="icons">
+                <li><i class="fab fa-html5"></i><h4>HTML5</h4></li>
+                <li><i class="fab fa-css3-alt"></i><h4>CSS3</h4></li>
+                <li><i class="fab fa-sass"></i>
+                  <h4>SASS</h4>
+                </li>
+                <li><i class="fab fa-js"></i> <h4>ES6</h4></li>
+                <li><img src="./assets/icons/jquery.svg" alt="Icon for JQuery.">
+                  <h4>JQuery</h4>
+                </li>
+                <li><i class="fab fa-react"></i>
+                  <h4>React</h4>
+                </li>
+                <li><i class="fab fa-github"></i><h4>Github</h4> </li>
+                <li><i class="fas fa-terminal"></i><h4>Terminal</h4></li>
+                <li><img src="./assets/icons/firebase.svg" alt="Icon for Firebase."><h4>Firebase</h4></li>
+                <li><img src="./assets/icons/vscode.svg" alt="Icon for Visual Studio Code."><h4>VSCode</h4></li>
+                <li><img src="./assets/icons/responsive-design.svg" alt="Icon for Responsive Design."><h4>Responsive</h4></li>
+            </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- PROJECTS -->
     <section id="projects">
       <div class="wrapper">
         <div class="content">
+          <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Work</h2>
           <!-- Project -->
-          <div class="project" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
-            <div class="mockup">
-              <!-- screenshot -->
+          <div class="projects-container">
+            <div class="project" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
+              <div class="mockup">
+                <!-- screenshot -->
+              </div>
+              <div class="description">
+                <h3>Project1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
+                <a class="view" href="#">Live</a>
+                <a class="view" href="#">Github</a>
+              </div>
             </div>
-            <div class="description">
-              <h3>Project1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-              <a class="view" href="#">Live</a>
-              <a class="view" href="#">Github</a>
+            <!-- Project -->
+            <div class="project" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
+              <div class="mockup">
+                <!-- screenshot -->
+              </div>
+              <div class="description">
+                <h3>Project2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
+                <a class="view" href="#">Live</a>
+                <a class="view" href="#">Github</a>
+              </div>
             </div>
-          </div>
-          <!-- Project -->
-          <div class="project" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
-            <div class="mockup">
-              <!-- screenshot -->
+            <!-- Project -->
+            <div class="project" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
+              <div class="mockup">
+                <!-- screenshot -->
+              </div>
+              <div class="description">
+                <h3>Project3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
+                <a class="view" href="#">Live</a>
+                <a class="view" href="#">Github</a>
+              </div>
             </div>
-            <div class="description">
-              <h3>Project2</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-              <a class="view" href="#">Live</a>
-              <a class="view" href="#">Github</a>
-            </div>
-          </div>
-          <!-- Project -->
-          <div class="project" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
-            <div class="mockup">
-              <!-- screenshot -->
-            </div>
-            <div class="description">
-              <h3>Project3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-              <a class="view" href="#">Live</a>
-              <a class="view" href="#">Github</a>
-            </div>
-          </div>
-          <!-- Project -->
-          <div class="project" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
-            <div class="mockup">
-              <!-- screenshot -->
-            </div>
-            <div class="description">
-              <h3>Project4</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-              <a class="view" href="#">Live</a>
-              <a class="view" href="#">Github</a>
+            <!-- Project -->
+            <div class="project" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
+              <div class="mockup">
+                <!-- screenshot -->
+              </div>
+              <div class="description">
+                <h3>Project4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
+                <a class="view" href="#">Live</a>
+                <a class="view" href="#">Github</a>
+              </div>
             </div>
           </div>
         </div>
@@ -131,7 +156,7 @@
     <footer id="contact">
       <div class="wrapper">
         <div class="content">
-          <h2>Get In Touch</h2>
+          <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">Contact Me</h2>
           <a class="email" href="mailto:nxioffe@gmail.com">nxioffe <span>[at]</span> gmail <span>[dot]</span> com</a>
           <div class="icons">
             <i class="fab fa-twitter"></i> 

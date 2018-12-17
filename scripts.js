@@ -4,22 +4,37 @@ const app = {};
 
 // Doc Ready
 $(function() {
-    console.log("ready");
-    app.init();
-
+  app.init();
 });
 
-app.init = function () {
-    console.log("init!");
-    // listeners
-    // app.startModal();
+app.init = function() {
+  // window.onscroll();
+  app.menu();
 };
 
+app.menu = function() {
+  $(".hamburger").on("click", function() {
+    $(".list").toggleClass("hidden");
+    $(".hamburger").toggleClass("hide");
+    $(".exit").toggleClass("hidden");
+  });
+  $(".exit").on("click", function() {
+    $(".list").toggleClass("hidden");
+    $(".hamburger").toggleClass("hide");
+    $(".exit").toggleClass("hidden");
+  });
+};
+// window.onscroll = function () {
+//     fixNav()
+// };
 
-// app.menu = function () {
-//     $(".hamburgerNav").on("click", function () {
-//         $(".pageNav").toggleClass("menuHide");
-//         $(".hamburger").toggleClass("hidden");
-//         $(".close").toggleClass("hidden");
-//     })
+// app.topbar = document.getElementById("top-bar");
+// app.sticky = app.topbar.offsetTop;
+
+// function fixNav() {
+//     if (window.pageYOffset >= app.sticky) {
+//         app.topbar.classList.add("fix-nav")
+//     } else {
+//         app.topbar.classList.remove("fix-nav");
+//     }
 // }

@@ -2,57 +2,63 @@ header {
   background: $white;
   color: $black;
   height: 100vh;
-  padding: 25px 0;
   position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  h1 {
-    color: $black;
-    font-size: 8rem;
-    margin: 10px 50px;
-    display: inline-block;
-    letter-spacing: -4px;
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   i {
     font-size: 2.5rem;
-    color: white;
-  }
-  span {
-      color: $accent;
-  }
-  h2 {
-      text-transform: lowercase;
+    color: $accent;
   }
 }
 
-nav {
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li {
-      text-transform: lowercase;
-      margin: 0 15px;
-    }
-    a {
-      color: $black;
-      position: relative;
-      &:hover:after {
-        color: $accent;
-      }
-    }
-  }
+#top-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 5vw;
+  background: $white;
+  z-index: 100;
 }
 
-header a::after {
-  content: ".";
-  font-size: 8rem;
+.main-nav {
+  position: relative;
+}
+.list {
+  display: none;
+  text-transform: lowercase;
+  text-align: right;
   position: absolute;
-  top: -35px;
-  left: 40%;
-  color: transparent;
+  top: -10px;
+  right: 0;
+  li {
+    text-transform: lowercase;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 20px 10px 30px;
+    &:hover {
+      border: 1px solid $accent;
+      background: lighten($accent, 25%);
+    }
+  }
 }
+
+.exit,
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
+
+// .fix-nav {
+//   position: fixed;
+//   top: 0;
+// }
