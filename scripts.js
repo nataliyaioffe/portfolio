@@ -25,6 +25,7 @@ app.menu = function() {
   });
 };
 // window.onscroll = function () {
+//   console.log("onscroll");
 //     fixNav()
 // };
 
@@ -32,6 +33,8 @@ app.menu = function() {
 // app.sticky = app.topbar.offsetTop;
 
 // function fixNav() {
+//   console.log("fixnav");
+
 //     if (window.pageYOffset >= app.sticky) {
 //         app.topbar.classList.add("fix-nav")
 //     } else {
