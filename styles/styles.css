@@ -170,7 +170,7 @@ body {
   margin: 0 auto; }
 
 .content {
-  padding: 50px 30px;
+  padding: 50px 0;
   position: relative; }
   .content h2 {
     margin: 25px 0; }
@@ -241,6 +241,22 @@ header span {
 
 .io {
   color: #fa8072; }
+
+@media (max-width: 550px) {
+  header span {
+    font-size: 6.5rem; }
+  header h2 {
+    font-size: 2.2rem; } }
+
+@media (max-width: 450px) {
+  header span {
+    font-size: 5.5rem; }
+  header h2 {
+    font-size: 2rem; } }
+
+@media (max-width: 350px) {
+  header span {
+    font-size: 5rem; } }
 
 header {
   background: #faf9f9;
@@ -342,8 +358,6 @@ header {
   flex-wrap: wrap; }
 
 #projects .project {
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
   margin-bottom: 25px;
   width: calc(50% - 20px); }
   #projects .project:nth-of-type(odd) {
@@ -370,6 +384,20 @@ header {
   #projects .view:hover {
     border-color: #fa8072;
     background: #feefed; }
+
+@media (max-width: 750px) {
+  #projects .projects-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #projects .project {
+    width: 90%; }
+    #projects .project:nth-of-type(odd) {
+      margin-right: 0; } }
 
 footer {
   color: #181717;
@@ -454,3 +482,9 @@ form {
     color: #faf9f9; }
     form input[type="submit"]:hover {
       background: #181717; }
+
+@media (max-width: 550px) {
+  form {
+    width: 100%; }
+    form label {
+      text-align: center; } }

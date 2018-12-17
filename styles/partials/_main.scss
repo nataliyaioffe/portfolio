@@ -34,8 +34,6 @@
         flex-wrap: wrap;
     }
     .project {
-        border-bottom: 1px solid transparent;
-        border-top: 1px solid transparent;
         margin-bottom: 25px;
         width: calc(50% - 20px);
          &:nth-of-type(odd) {
@@ -65,4 +63,20 @@
            background: lighten($accent, 25%);
        }
    }
+}
+
+@media (max-width: 750px) {
+    #projects {
+        .projects-container {
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+        }
+        .project {
+            width: 90%;
+             &:nth-of-type(odd) {
+                margin-right: 0;
+            }
+        }
+    }
 }

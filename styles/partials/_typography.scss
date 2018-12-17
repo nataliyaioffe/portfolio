@@ -45,3 +45,29 @@ header span {
   .io {
     color: $accent;
   }
+
+
+@media (max-width: 550px) {
+  header span {
+    font-size: 6.5rem;
+  }
+  header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  header span {
+      font-size: 5.5rem;
+    }
+    header h2 {
+      font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 350px) {
+  header span {
+      font-size: 5rem;
+  }
+}
