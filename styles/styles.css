@@ -232,10 +232,11 @@ h1 {
 .logo {
   font-weight: 400;
   font-size: 2.5rem;
-  display: inline-block; }
+  height: 100%;
+  padding-top: 5px; }
   .logo::after {
     font-size: 2rem;
-    top: 4px;
+    top: 9px;
     left: 82px; }
 
 .tagline {
@@ -289,10 +290,8 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
   width: 100%;
-  padding: 10px 5vw;
+  padding: 5px 5vw;
   z-index: 100; }
 
 .main-nav {
@@ -329,7 +328,8 @@ header {
   z-index: 1000;
   -webkit-transition: 1s ease;
   -o-transition: 1s ease;
-  transition: 1s ease; }
+  transition: 1s ease;
+  font-size: 1.4rem; }
 
 .hamburger, .exit {
   background: #faf9f9;
@@ -402,6 +402,9 @@ header,
   #projects .mockup {
     width: 100%;
     position: relative; }
+  #projects .project-skills {
+    font-size: 1.4rem;
+    font-weight: 700; }
   #projects .description {
     padding: 25px 0;
     text-align: center; }
@@ -499,6 +502,10 @@ form {
     color: #faf9f9; }
     form input[type="submit"]:hover {
       background: #181717; }
+
+@media (max-width: 1230px) {
+  #top-bar {
+    background: #faf9f9; } }
 
 @media (max-width: 750px) {
   #projects .projects-container {
