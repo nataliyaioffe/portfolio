@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
   width: 100%;
   padding: 10px 5vw;
   z-index: 100;
@@ -23,24 +24,56 @@ header {
 
 .main-nav {
   position: relative;
+  cursor: pointer;
+  transition: .75s ease;
+  z-index: 2000;
+  &:hover .hamburger {
+    border-color: $accent;
+  }
 }
+
 .list {
   display: none;
   text-transform: lowercase;
   text-align: right;
   position: absolute;
-  top: -10px;
+  top: 50px;
   right: 0;
   li {
+    background: $white;
     text-transform: lowercase;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 10px 0;
     padding: 10px 20px 10px 30px;
+    font-weight: 700;
     &:hover {
-      border: 1px solid $accent;
+      border: 2px solid $accent;
       background: lighten($accent, 25%);
     }
+    li:nth-of-type(1) {
+      background: red;
+
+    }
   }
+}
+
+.hamburger {
+  z-index: 1000;
+  transition: 1s ease;
+}
+
+.hamburger, .exit {
+  background: $white;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid black;
+
+}
+
+.exit {
+  padding: 10px;
+  display:inline-block;
+  width: 40px;
+  margin-left: auto;
 }
 
 .exit,

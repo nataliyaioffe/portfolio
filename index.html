@@ -16,23 +16,23 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css" />
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link
-      href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Muli|Averia+Serif+Libre|Lato|osefin+Slab:400,700|Open+Sans:300,400"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Tajawal:300,400,700"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
+
  
     <title>Nataliya Ioffe - Web Developer</title>
   </head>
   <body id="home">
   
     <div id="top-bar">
-      <h1>Nataliya Ioffe</h1>
+      <h2 class="logo"><a href="#home">Nataliya <span class="io">Io</span>ffe</a></h2>
       <nav class="main-nav">
         <i class="hamburger fas fa-bars"></i>
-        <ul class="list">
-          <i class="exit fas fa-times"></i>
+        <i class="exit fas fa-times"></i>
+        <ul class="list clearfix">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -42,8 +42,14 @@
 
     <header>
       <div class="wrapper">
-          <span>nataliya.<span class="io">io</span>ffe</span>
-          <h2>Front-End Web Developer</h2>
+        <div class="circle-multiple">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+
+          <h1>nataliya <span class="io">io</span>ffe</h1>
+          <h2 class="tagline">Front-End Web Developer</h2>
           <a href="#about"><i class="fas fa-angle-double-down"></i></a>
           </div>
       </div>      
@@ -52,7 +58,7 @@
     <!-- MAIN -->
     <main>
       <!-- ABOUT -->
-      <section id="about">
+      <section class="scroll-1" id="about">
         <div class="wrapper">
             <h2>Hey... Nice to meet you!</h2>
             <p><strong>I'm a Front-End Web Developer based in Toronto. </strong>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College of Technology.</p>
@@ -62,27 +68,47 @@
         </div>
       </section>
       <!-- SKILLS -->
-      <section id="skills">
+      <section class="scroll-2" id="skills">
         <div class="wrapper">
             <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Skills</h2>
             <ul class="icons">
-                <li><i class="fab fa-html5"></i><h4>HTML5</h4></li>
-                <li><i class="fab fa-css3-alt"></i><h4>CSS3</h4></li>
-                <li><i class="fab fa-sass"></i>
+                <li>
+                  <i class="fab fa-html5" aria-hidden=“true”></i>
+                  <h4>HTML5</h4></li>
+                <li>
+                  <i class="fab fa-css3-alt" aria-hidden=“true”></i>
+                  <h4>CSS3</h4></li>
+                <li>
+                  <i class="fab fa-sass" aria-hidden=“true”></i>
                   <h4>SASS</h4>
                 </li>
-                <li><i class="fab fa-js"></i> <h4>ES6</h4></li>
+                <li>
+                  <i class="fab fa-js" aria-hidden=“true”></i>
+                  <h4>ES6</h4></li>
                 <li><img src="./assets/icons/jquery.svg" alt="Icon for JQuery.">
                   <h4>JQuery</h4>
                 </li>
-                <li><i class="fab fa-react"></i>
+                <li><i class="fab fa-react" aria-hidden=“true”></i>
                   <h4>React</h4>
                 </li>
-                <li><i class="fab fa-github"></i><h4>Github</h4> </li>
-                <li><i class="fas fa-terminal"></i><h4>Terminal</h4></li>
-                <li><img src="./assets/icons/firebase.svg" alt="Icon for Firebase."><h4>Firebase</h4></li>
-                <li><img src="./assets/icons/vscode.svg" alt="Icon for Visual Studio Code."><h4>VSCode</h4></li>
-                <li><img src="./assets/icons/responsive-design.svg" alt="Icon for Responsive Design."><h4>Responsive</h4></li>
+                <li>
+                  <i class="fab fa-github" aria-hidden=“true”></i>
+                  <h4>Github</h4> </li>
+                <li>
+                  <i class="fas fa-terminal" aria-hidden=“true></i>
+                  <h4>Terminal</h4></li>
+                <li>
+                  <img src="./assets/icons/firebase.svg" alt="Icon for Firebase.">
+                  <h4>Firebase</h4>
+                </li>
+                <li>
+                  <img src="./assets/icons/vscode.svg" alt="Icon for Visual Studio Code.">
+                  <h4>VSCode</h4>
+                </li>
+                <li>
+                  <img src="./assets/icons/responsive-design.svg" alt="Icon for Responsive Design.">
+                  <h4>Responsive</h4>
+                </li>
             </ul>
         <a href="#projects">
           <i class="fas fa-angle-double-down"></i></a>
@@ -90,22 +116,21 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section class="scroll-3" id="projects">
       <div class="wrapper">
           <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Work</h2>
           <!-- Project1 -->
           <div class="projects-container">
             <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
               <div class="mockup">
-                
-                <img src="./assets/gym.png" alt="">
+                <img src="./assets/screenshots/gym.png" alt="Macbook Pro displaying header of Project.">
                 <!-- screenshot -->
               </div>
               <div class="description">
-                <h3>Project1</h3>
-                <p>Skill/Skill/Skill/Skill</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-                <a class="view" href="#">Live</a>
+                <h3>Flex Fitness</h3>
+                <p>React / Firebase / Javascript / SCSS / HTML</p>
+                <p>A React app which allows users to build custom workout routines and track their progress at the gym. Made with Emma Hughes and Kyle Collins.</p>
+                <a class="view" href="https://gym-gordon.firebaseapp.com/">Live</a>
                 <a class="view" href="#">Github</a>
               </div>
             </div>
@@ -113,12 +138,12 @@
             <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
               <div class="mockup">
                 
-                <img src="./assets/bomb.png" alt="">
+                <img src="./assets/screenshots/bomb.png" alt="Macbook Pro displaying header of Project.">
               </div>
               <div class="description">
-                <h3>Project2</h3>
-                <p>Skill/Skill/Skill/Skill</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
+                <h3>Bomb Dot Com</h3>
+                <p>Javascript / JQuery / API / SCSS / HTML</p>
+                <p>Players have 60 seconds to defuse a ticking bomb by correctly answering questions from the Open Trivia DB API. Made in collaboration with Scott Fuller.</p>
                 <a class="view" href="#">Live</a>
                 <a class="view" href="#">Github</a>
               </div>
@@ -127,37 +152,37 @@
             <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1100">
               <div class="mockup">
                 
-                <img src="./assets/hp.png" alt="">
+                <img src="./assets/screenshots/hp.png" alt="Macbook Pro displaying header of Project.">
               </div>
               <div class="description">
-                <h3>Project3</h3>
-                <p>Skill/Skill/Skill/Skill</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-                <a class="view" href="#">Live</a>
+                <h3>The Sorting Hat</h3>
+                <p>React / Javascript / API / SCSS / HTML</p>
+                <p>A React app where users are sorted into Harry Potter houses and directed to personal house dashboards along with fellow classmates.</p>
+                <a class="view" href="https://harry-potter-7e981.firebaseapp.com/">Live</a>
                 <a class="view" href="#">Github</a>
               </div>
             </div>
             <!-- Project4 -->
             <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="1600" data-aos-duration="1100">
               <div class="mockup">
-                <img src="./assets/zen.png" alt="">
+                <img src="./assets/screenshots/zen.png" alt="Macbook Pro displaying header of Project.">
               </div>
               <div class="description">
                 <h3>Project4</h3>
                 <p>Skill/Skill/Skill/Skill</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni officia quaerat nesciunt recusandae repellat.</p>
-                <a class="view" href="#">Live</a>
+                <a class="view" href="http://www.nataliya.io/shutter">Live</a>
                 <a class="view" href="#">Github</a>
               </div>
             </div>
           </div>
-        <a href="#contact"><i class="fas fa-angle-double-down"></i></a>
+        <!-- <a href="#contact"><i class="fas fa-angle-double-down"></i></a> -->
       </div>
     </section>
     </main>
     <!-- END MAIN -->
 
-    <footer id="contact">
+    <footer class="scroll-4" id="contact">
       <div class="wrapper">
           <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">Contact Me</h2>
           <a class="email" href="mailto:nxioffe@gmail.com">nxioffe <span>[at]</span> gmail <span>[dot]</span> com</a>
@@ -172,7 +197,7 @@
             <label for="email">Email*</label>
             <input required id="email" name="email" type="email">
             <label for="email">Message*</label>
-            <textarea required  id="message" name="message" cols="30" rows="5"></textarea>
+            <textarea required  id="message" name="message" cols="30" rows="3"></textarea>
             <input type="submit" value="Send">
           </form>
           <a class="top" href="#home"><i class="fas fa-angle-double-up"></i></a>

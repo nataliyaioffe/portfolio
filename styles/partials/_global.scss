@@ -8,6 +8,7 @@ $grey: #646464;
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,62 +23,26 @@ body {
   position: relative;
 }
 
-// .fa-angle-double-down {
-//   position: absolute;
-//   bottom: -s10vh;
-//   left: 50%;
-// }
+.fa-angle-double-down {
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  bottom: -20vh;
+  &:hover{
+    color: $black;
+    font-size: 3.1rem;
+  }
+}
 
 .fa-angle-double-down,
 .fa-angle-double-up {
   color: $accent;
-  font-size: 2rem;
   display: block;
   text-align: center;
-  // padding-top: 10vh;
 }
-
-
-
-header,
-#about, #skills, footer {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 img {
   width: 100%; 
   max-width: 100%; 
   display: block;
 }
-
-p {
-  line-height: 2.5rem;
-  margin-bottom: 15px;
-}
-
-// #about, 
-// #skills, 
-// #projects {
-//   .content::before {
-//     content:"";
-//     position: absolute;
-//     width: 100%;
-//     bottom: 0;
-//     left: 0;
-//     border-bottom: 1px solid $black;
-//   }
-  // .content::after {
-  //   content:"";
-  //   position: absolute;
-  //   width: 10px;
-  //   height:  10px;
-  //   background: black;
-  //   left: calc(50% - 5px);
-  //   bottom: -5px;
-  // }
-// }
-

@@ -1,13 +1,6 @@
-
-
 body {
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
-
-
-    font-family: 'Open Sans', sans-serif;
-
-
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
@@ -15,35 +8,68 @@ a {
   color: $black;
 }
 
+
+p {
+  line-height: 2.5rem;
+  margin-bottom: 15px;
+}
+
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
 }
 
 // header
 
-header {
-  span {
-    font-size: 8rem;
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
-    }
+h1, .logo {
+  text-transform: lowercase;
+  position: relative;
   .io {
     color: $accent;
   }
 }
+
+h1::after, .logo::after {
+  content: ".";
+  position: absolute;
+  color: $black;
+}
+
 h1 {
-  color: $accent;
-  font-size: 2rem;
+  font-size: 8rem;
+  font-weight: 300;
+  position: relative;
+  &::after {
+    font-size: 8rem;
+    top: 0;
+    left:251px;
+  }
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 2.5rem;
   display: inline-block;
+  &::after {
+    font-size: 2rem;
+    top: 4px;
+    left:82px;
+  }
+}
+
+.tagline {
+  font-weight: 400;
   text-transform: lowercase;
 }
 
 h2 {
-    margin-bottom: 25px;
     font-size: 3.5rem;
+}
+
+section h2 {
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -55,3 +81,67 @@ h4 {
   font-size:1.4rem;
 }
 
+
+
+@mixin border-gradient($from, $to, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+  
+  box-shadow: 0 1px 0 $weight rgba($mix-sub-to, .25),
+              0 -1px 0 $weight rgba($mix-sub-from, .25),
+              1px 0 0 $weight rgba($mix-sub-to, .25),
+              -1px 0 0 $weight  rgba($mix-sub-from, .25),
+              1px -1px 0 $weight rgba($mix-main, .5),
+              -1px 1px 0 $weight rgba($mix-main, .5),
+              1px 1px 0 $weight rgba($to, .75),
+              -1px -1px 0 $weight rgba($from, .75);
+}
+
+header {
+  position: relative;
+}
+
+// .circle {
+//   width: 500px;
+//   height: 500px;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: -100%;
+//   left: 20%;
+//    @include border-gradient(darksalmon, $accent);
+//     animation: rotateThis 60s linear infinite;
+//   &:nth-of-type(2) {
+//     @include border-gradient($accent, $transaccent);
+//     animation: rotateThis 60s linear infinite;
+//   }
+
+//   &:nth-of-type(3) {
+//     @include border-gradient($accent, $transaccent);
+//   }
+  
+  
+//   &-multiple & {
+    
+//     &:nth-of-type(1) { animation: psycho 65s linear infinite; }
+//     &:nth-of-type(2) { animation: psycho 60s linear .30s infinite; }
+//     &:nth-of-type(3) { animation: psycho 65s linear .65s infinite; }
+//   }
+ 
+// }
+
+// @keyframes rotateThis {
+//   from {transform: rotate(0deg) scale(1);}
+  
+//   to {transform: rotate(360deg) scale(1);}
+// }
+
+// @keyframes psycho {
+//   0% {transform: rotate(0deg) scale(1) translate(0, 0);}
+  
+//   33% {transform: rotate(360deg) scale(1) translate(25px, 25px);}
+  
+//   66% {transform: rotate(720deg) scale(1) translate(-25px, -25px);}
+  
+//   100% {transform: rotate(1080deg) scale(1) translate(0, 0);}
+// }

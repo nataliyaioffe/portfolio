@@ -158,7 +158,8 @@ ul {
 
 /* /END GENERAL STYLING */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   background: #faf9f9;
@@ -170,67 +171,82 @@ body {
   margin: 0 auto;
   position: relative; }
 
+.fa-angle-double-down {
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  bottom: -20vh; }
+  .fa-angle-double-down:hover {
+    color: #181717;
+    font-size: 3.1rem; }
+
 .fa-angle-double-down,
 .fa-angle-double-up {
   color: #fa8072;
-  font-size: 2rem;
   display: block;
   text-align: center; }
-
-header,
-#about, #skills, footer {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
 
 img {
   width: 100%;
   max-width: 100%;
   display: block; }
 
-p {
-  line-height: 2.5rem;
-  margin-bottom: 15px; }
-
 body {
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
 a {
   color: #181717; }
 
+p {
+  line-height: 2.5rem;
+  margin-bottom: 15px; }
+
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  font-family: 'Josefin Slab', serif; }
-
-header span {
-  font-size: 8rem;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Tajawal', sans-serif;
   font-weight: 700; }
 
-header .io {
-  color: #fa8072; }
+h1, .logo {
+  text-transform: lowercase;
+  position: relative; }
+  h1 .io, .logo .io {
+    color: #fa8072; }
+
+h1::after, .logo::after {
+  content: ".";
+  position: absolute;
+  color: #181717; }
 
 h1 {
-  color: #fa8072;
-  font-size: 2rem;
-  display: inline-block;
+  font-size: 8rem;
+  font-weight: 300;
+  position: relative; }
+  h1::after {
+    font-size: 8rem;
+    top: 0;
+    left: 251px; }
+
+.logo {
+  font-weight: 400;
+  font-size: 2.5rem;
+  display: inline-block; }
+  .logo::after {
+    font-size: 2rem;
+    top: 4px;
+    left: 82px; }
+
+.tagline {
+  font-weight: 400;
   text-transform: lowercase; }
 
 h2 {
-  margin-bottom: 25px;
   font-size: 3.5rem; }
+
+section h2 {
+  margin-bottom: 50px; }
 
 h3 {
   margin-bottom: 5px;
@@ -238,6 +254,9 @@ h3 {
 
 h4 {
   font-size: 1.4rem; }
+
+header {
+  position: relative; }
 
 header {
   background: #faf9f9;
@@ -270,28 +289,58 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   width: 100%;
   padding: 10px 5vw;
   z-index: 100; }
 
 .main-nav {
-  position: relative; }
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .75s ease;
+  -o-transition: .75s ease;
+  transition: .75s ease;
+  z-index: 2000; }
+  .main-nav:hover .hamburger {
+    border-color: #fa8072; }
 
 .list {
   display: none;
   text-transform: lowercase;
   text-align: right;
   position: absolute;
-  top: -10px;
+  top: 50px;
   right: 0; }
   .list li {
+    background: #faf9f9;
     text-transform: lowercase;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 10px 0;
-    padding: 10px 20px 10px 30px; }
+    padding: 10px 20px 10px 30px;
+    font-weight: 700; }
     .list li:hover {
-      border: 1px solid #fa8072;
+      border: 2px solid #fa8072;
       background: #feefed; }
+    .list li li:nth-of-type(1) {
+      background: red; }
+
+.hamburger {
+  z-index: 1000;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease; }
+
+.hamburger, .exit {
+  background: #faf9f9;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid black; }
+
+.exit {
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  margin-left: auto; }
 
 .exit,
 .hide {
@@ -299,6 +348,20 @@ header {
 
 .hidden {
   display: block; }
+
+header,
+#about,
+#skills {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 #about {
   text-align: left; }
@@ -312,21 +375,19 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-
-#skills li {
-  width: 120px;
-  text-align: center;
-  padding: 20px 10px; }
-  #skills li i {
+  #skills .icons li {
+    width: 120px;
+    text-align: center;
+    padding: 20px 10px; }
+  #skills .icons i {
     font-size: 4.5rem;
     margin-bottom: 5px; }
-
-#skills img {
-  height: 45px;
-  margin-bottom: 5px; }
+  #skills .icons img {
+    height: 45px;
+    margin-bottom: 5px; }
 
 #projects {
-  padding-top: 50px; }
+  padding: 100px 0; }
   #projects .projects-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,14 +395,13 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   #projects .project {
+    margin-bottom: 25px;
     width: calc(50% - 20px); }
     #projects .project:nth-of-type(odd) {
       margin-right: 40px; }
   #projects .mockup {
     width: 100%;
     position: relative; }
-    #projects .mockup img {
-      width: 100%; }
   #projects .description {
     padding: 25px 0;
     text-align: center; }
@@ -366,7 +426,8 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  padding-top: 50px; }
   footer .email {
     font-size: 2rem; }
     footer .email span {
@@ -414,8 +475,9 @@ form {
   width: 450px;
   margin: 0 auto; }
   form label {
-    text-align: left;
-    margin-bottom: 5px; }
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.6rem; }
   form input,
   form textarea {
     border: none;

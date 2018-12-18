@@ -5,6 +5,7 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 50px;
   .email {
     font-size: 2rem;
     span {
@@ -55,8 +56,9 @@ form {
   width: 450px;
   margin: 0 auto;
   label {
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
+    font-size: 1.6rem;
   }
   input,
   textarea {
