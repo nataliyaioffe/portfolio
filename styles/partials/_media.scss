@@ -1,8 +1,12 @@
-@media (max-width: 1230px) {
-  #top-bar {
-    background: $white;
-  }
-}
+// @media (max-width: 875px) {
+//   .circle {
+//     width: 515px;
+//     height: 515px;
+//     top: -150%;
+//     left: 15%;
+//   }
+// }
+
 @media (max-width: 750px) {
   #projects {
     .projects-container {
@@ -18,6 +22,14 @@
   }
 }
 
+@media (max-width: 660px) {
+  #about {
+    .content {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+}
 @media (max-width: 550px) {
   header span {
     font-size: 6.5rem;

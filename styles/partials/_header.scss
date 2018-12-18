@@ -1,4 +1,5 @@
 header {
+  overflow-x: hidden;
   background: $white;
   color: $black;
   height: 100vh;
@@ -15,19 +16,49 @@ header {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
-  padding: 5px 5vw;
+  padding: 20px 5vw;
   z-index: 100;
+}
+
+.main-nav::before,
+.main-nav::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform-origin: 60% center;
+  z-index: -10;
+
+}
+
+.main-nav::before {
+  top: 0;
+  left: 0;
+  border: 2px solid $accent;
+}
+
+.main-nav::after {
+  top:-5px;
+  left: -9px;
+  border: 2px solid $accent2;
 }
 
 .main-nav {
   position: relative;
   cursor: pointer;
-  transition: .75s ease;
   z-index: 2000;
+  &:hover::after {
+    animation: rotate2 5s linear infinite;
+  }
+  &:hover::before {
+    animation: clockwise 5s linear infinite;
+  }
   &:hover .hamburger {
-    border-color: $accent;
+    border-color: $black;
   }
 }
 
@@ -49,29 +80,25 @@ header {
       border: 2px solid $accent;
       background: lighten($accent, 25%);
     }
-    li:nth-of-type(1) {
-      background: red;
-
-    }
   }
 }
 
 .hamburger {
   z-index: 1000;
-  transition: 1s ease;
   font-size: 1.4rem;
 }
 
-.hamburger, .exit {
+.hamburger,
+.exit {
   background: $white;
   padding: 10px 10px 10px 10px;
-  border: 2px solid black;
-
+  border: 2px solid $black;
+  border-radius: 50%;
 }
 
 .exit {
   padding: 10px;
-  display:inline-block;
+  display: inline-block;
   width: 40px;
   margin-left: auto;
 }

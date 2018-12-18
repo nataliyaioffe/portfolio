@@ -28,9 +28,9 @@
   <body id="home">
   
     <div id="top-bar">
-      <h2 class="logo">
-        <a href="#home">Nataliya <span class="io">Io</span>ffe</a>
-      </h2>
+      <!-- <h2 class="logo"> -->
+        <!-- <a href="#home">Nataliya <span class="io">Io</span>ffe</a> -->
+      <!-- </h2> -->
       <nav class="main-nav">
         <i class="hamburger fas fa-bars"></i>
         <i class="exit fas fa-times"></i>
@@ -60,18 +60,33 @@
     <!-- MAIN -->
     <main>
       <!-- ABOUT -->
-      <section class="scroll-1" id="about">
+      <section id="about">
         <div class="wrapper">
-            <h2>Hey... Nice to meet you!</h2>
-            <p><strong>I'm a Front-End Web Developer based in Toronto. </strong>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College of Technology.</p>
-            <p>I previously grew up in rural Virginia in the States, and spent most of my adult life in Los Angeles running a TV production office. In LA I became inspired to code after a transformative experience working at an ultra-fast-paced tech startup.</p>
-            <p>After settling in Toronto, I'm full-steam ahead in pursuing my passion for building memorable user experiences that make the world a better place, one click at a time. <a href="mailto:nxioffe@mgail.com">Let's work together!</a></p>
+          <div class="content">
+            <div class="intro">
+              <h2>Hey... Nice to meet you!</h2>
+              <p><strong>I'm a Front-End Web Developer based in Toronto. </strong></p>
+            </div>
+            <div class="me">
+              <img src="./assets/2bootcamp.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College
+              of Technology.</p>
+            <p>I previously grew up in rural Virginia, and spent most of my adult life working Los Angeles in TV
+              production. However, a unique opportunity to work at an ultra-fast-pace tech startup inspired me to learn to code.</p>
+            <p>After settling in Toronto, I'm full-steam ahead in pursuing my passion for building memorable user experiences that make the world a better place, one click at a time. </p>
+            <!-- <a href="mailto:nxioffe@mgail.com">Let's work together!</a> -->
+            </p>
+          </div>
+        </div>
           <a href="#skills"><i class="fas fa-angle-double-down"></i></a>
         </div>
       </section>
       <!-- SKILLS -->
-      <section class="scroll-2" id="skills">
+      <section id="skills">
         <div class="wrapper">
+          <div class="content">
             <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Skills</h2>
             <ul class="icons">
                 <li>
@@ -111,14 +126,16 @@
                   <img src="./assets/icons/responsive-design.svg" alt="Icon for Responsive Design.">
                   <h4>Responsive</h4>
                 </li>
-            </ul>
-        <a href="#projects">
-          <i class="fas fa-angle-double-down"></i></a>
+              </ul>
+            </div>
+          <a href="#projects">
+            <i class="fas fa-angle-double-down"></i>
+          </a>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="scroll-3" id="projects">
+    <section id="projects">
       <div class="wrapper">
           <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Work</h2>
           <!-- Project1 -->
@@ -139,7 +156,6 @@
             <!-- Project2 -->
             <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
               <div class="mockup">
-                
                 <img src="./assets/screenshots/bomb.png" alt="Macbook Pro displaying header of Project.">
               </div>
               <div class="description">
@@ -184,7 +200,7 @@
     </main>
     <!-- END MAIN -->
 
-    <footer class="scroll-4" id="contact">
+    <footer id="contact">
       <div class="wrapper">
           <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">Contact Me</h2>
           <a class="email" href="mailto:nxioffe@gmail.com">nxioffe <span>[at]</span> gmail <span>[dot]</span> com</a>
@@ -210,6 +226,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="./scripts.js"></script>
   </body>
 </html>

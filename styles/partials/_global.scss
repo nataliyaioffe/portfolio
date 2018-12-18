@@ -1,10 +1,11 @@
 $white: #faf9f9;
-$transwhite: rgba(250, 249, 249,0.4);
+$transwhite: rgba(250, 249, 249,0.9);
 $black: #181717;
 $transblack: rgba(0, 0, 0, 0.8);
 $accent: #fa8072;
 $transaccent: rgba(250, 128, 114,0.5);
 $grey: #646464;
+$accent2: #ffb30e;
 
 html {
   font-size: 62.5%;
@@ -21,13 +22,14 @@ body {
   width: 90vw;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 
 .fa-angle-double-down {
   position: absolute;
   font-size: 3rem;
   left: 50%;
-  bottom: -20vh;
+  bottom: 50px;
   &:hover{
     color: $black;
     font-size: 3.1rem;

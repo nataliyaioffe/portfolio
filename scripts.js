@@ -12,19 +12,32 @@ app.init = function() {
   app.menu();
   
 
-  $(".fa-angle-double-down").on("click", function(e) {
-    if (app.scrollCount < 5) {
-      app.scrollCount++
-    } else {
-      app.scrollCount = 1;
-    }
-    console.log(app.scrollCount);
-    $("html, body").animate({ scrollTop: $(`.scroll-${app.scrollCount}`).offset().top}, 1000);
-  });
+
+
+  // $('button.scrollsomething').on('click', function () {
+  //   $.smoothScroll({ 
+  //     speed: 2000 
+  //   });
+  //   return false;
+  // });
+
+
+  // $(".fa-angle-double-down").smoothScroll();
+
+
+  // $(".fa-angle-double-down").on("click", function(e) {
+  //   if (app.scrollCount < 5) {
+  //     app.scrollCount++
+  //   } else {
+  //     app.scrollCount = 1;
+  //   }
+  //   console.log(app.scrollCount);
+  //   $("html, body").animate({ scrollTop: $(seci).offset().top}, 1000);
+  // });
 
 }
 
-app.scrollCount = 0;
+// app.scrollCount = 0;
 
 app.menu = function() {
   $(".hamburger").on("click", function() {
@@ -38,6 +51,7 @@ app.menu = function() {
     $(".exit").toggleClass("hidden");
   });
 };
+
 // window.onscroll = function () {
 //   console.log("onscroll");
 //     fixNav()
