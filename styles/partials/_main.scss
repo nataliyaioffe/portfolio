@@ -20,7 +20,8 @@ header,
   }
   .bio {
     text-align: left;
-    padding: 30px 0;
+    padding-top: 30px;
+    // border: 1px solid red;
   }
   .content {
     display: flex;
@@ -79,11 +80,11 @@ header,
       padding: 20px 10px;
     }
     i {
-      font-size: 4.5rem;
+      font-size: 6.8rem;
       margin-bottom: 5px;
     }
     img {
-      height: 45px;
+      height: 68px;
       margin-bottom: 5px;
     }
   }

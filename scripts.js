@@ -24,6 +24,11 @@ app.menu = function() {
   $(".exit").on("click", function() {
     app.dropdown()
   });
+
+  $(".main-nav a").on("click", function() {
+    app.dropdown()
+  })
+
 };
 
 app.dropdown = function() {

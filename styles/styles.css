@@ -166,7 +166,7 @@ body {
 
 .wrapper {
   max-width: 800px;
-  width: 90vw;
+  width: 85vw;
   margin: 0 auto;
   position: relative;
   height: 100%; }
@@ -256,6 +256,14 @@ header {
 
 #top-bar {
   position: fixed;
+  width: 100%;
+  padding: 20px 5vw;
+  z-index: 100; }
+
+.top-bar-wrapper {
+  max-width: 800px;
+  width: 90vw;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,15 +275,14 @@ header {
   justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  padding: 20px 5vw;
-  z-index: 100; }
+  align-items: center; }
 
 .main-nav::before,
 .main-nav::after {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   -webkit-transform-origin: 60% center;
@@ -289,12 +296,15 @@ header {
   border: 2px solid #fa8072; }
 
 .main-nav::after {
-  top: -5px;
-  left: -9px;
+  top: -4px;
+  left: -5px;
   border: 2px solid #ffb30e; }
 
 .main-nav {
+  text-align: right;
   position: relative;
+  display: inline-block;
+  right: -50px;
   cursor: pointer;
   z-index: 2000; }
   .main-nav:hover::after {
@@ -455,7 +465,7 @@ header,
 
 #about .bio {
   text-align: left;
-  padding: 30px 0; }
+  padding-top: 30px; }
 
 #about .content {
   display: -webkit-box;
@@ -514,10 +524,10 @@ header,
     text-align: center;
     padding: 20px 10px; }
   #skills .icons i {
-    font-size: 4.5rem;
+    font-size: 6.8rem;
     margin-bottom: 5px; }
   #skills .icons img {
-    height: 45px;
+    height: 68px;
     margin-bottom: 5px; }
 
 #projects,
@@ -647,6 +657,10 @@ form {
     form input[type="submit"]:hover {
       background: #181717; }
 
+@media (max-width: 950px) {
+  .main-nav {
+    right: 0px; } }
+
 @media (max-width: 860px) {
   .down-noun,
   .up-noun {
@@ -663,21 +677,18 @@ form {
     margin-bottom: 25px; }
   #about .bio {
     text-align: justify;
-    padding: 30px 0;
-    width: 80%; }
+    width: 100%;
+    margin: 0; }
   #about .headshot {
     width: 250px;
     margin: 0 auto; }
-  #skills {
-    height: auto; }
-    #skills .content {
-      padding: 50px 0; } }
+  #skills .content {
+    padding: 50px 0; } }
 
 @media (max-width: 750px) {
   #about,
   #skills {
-    height: auto;
-    padding-bottom: 50px; }
+    height: auto; }
   #projects,
   #projects2 {
     height: auto; }
@@ -697,12 +708,12 @@ form {
       #projects .project:nth-of-type(odd),
       #projects2 .project:nth-of-type(odd) {
         margin-right: 0; }
-  #projects2 {
-    padding-top: 0; } }
+    #projects #projects2,
+    #projects2 #projects2 {
+      padding-top: 0; } }
 
 @media (max-width: 660px) {
   #about .content {
-    width: 95%;
     margin: 0 auto; } }
 
 @media (max-width: 550px) {
@@ -724,8 +735,10 @@ form {
 @media (max-width: 435px) {
   #about h2 {
     line-height: 1;
-    font-size: 2.6rem; } }
+    font-size: 2.6rem; }
+  #skills .icons i {
+    font-size: 6rem; } }
 
 @media (max-width: 375px) {
   #about .bio {
-    text-align: center; } }
+    text-align: left; } }
