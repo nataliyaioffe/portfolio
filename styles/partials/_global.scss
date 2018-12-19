@@ -1,9 +1,9 @@
 $white: #faf9f9;
-$transwhite: rgba(250, 249, 249,0.9);
+$transwhite: rgba(250, 249, 249, 0.9);
 $black: #181717;
 $transblack: rgba(0, 0, 0, 0.8);
 $accent: #fa8072;
-$transaccent: rgba(250, 128, 114,0.5);
+$transaccent: rgba(250, 128, 114, 0.5);
 $grey: #646464;
 $accent2: #ffb30e;
 
@@ -22,34 +22,21 @@ body {
   margin: 0 auto;
   position: relative;
   height: 100%;
-  // border: 1px solid black;
-}
-.down-noun,
-.fa-angle-double-down {
-  position: absolute;
-  font-size: 3rem;
-  left: 49%;
-  bottom: 50px;
-  &:hover{
-    color: $black;
-    font-size: 3.1rem;
-  }
-}
-
-.fa-angle-double-down,
-.fa-angle-double-up {
-  color: $accent;
-  display: block;
-  text-align: center;
-}
-
-img {
-  width: 100%; 
-  max-width: 100%; 
-  display: block;
 }
 
 .down-noun {
-  height: 500px;
-  width: 500px;
+  position:absolute;
+  left: 44%;
+  bottom: 5px;
+}
+.down-noun, 
+.up-noun {
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }

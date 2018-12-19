@@ -14,18 +14,13 @@ $(function() {
 app.init = function() {
   app.menu();
   $(".down").smoothScroll({ speed: 800 });
-  $(".top").smoothScroll({ speed: 800 });
+  $(".up").smoothScroll({ speed: 800 });
 
 
 
 
 }
 // end init
-
-
-
-
-
 
 
 app.menu = function() {
@@ -43,9 +38,6 @@ app.dropdown = function() {
   $(".hamburger").toggleClass("hide");
   $(".exit").toggleClass("hidden");
 }
-
-
-
 
 
 $(document).on('click', '.navbar-collapse.in', function (e) {

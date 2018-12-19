@@ -1,28 +1,23 @@
 //////// FOOTER ////////
 
 footer {
+  height: 100vh;
   color: $black;
   display: flex;
   flex-direction: column;
   position: relative;
   padding-top: 50px;
+  h2 {
+    margin-bottom: 25px;
+    line-height: 1;
+  }
   .email {
-    font-size: 2rem;
-    span {
-      color: $accent;
-    }
-  }
-  .top {
-    display:inline-block;
-    margin-top: 20px;
-    font-weight: 700;
-    &:hover {
-      color: $accent;
-    }
-  }
-  .email,
-  .top {
+    font-size: 1.8rem;
     color: $black;
+    font-weight: 500;
+  }
+  .up {
+    display: inline-block;
   }
   .icons {
     display: flex;
@@ -35,14 +30,12 @@ footer {
     margin: 0 5px;
     font-size: 2.5rem;
     transition: 0.45s ease;
-
     &:hover {
       color: $accent;
     }
   }
   .copyright {
-    margin-top: 25px;
-    color: $grey;
+    color: grey;
   }
 }
 

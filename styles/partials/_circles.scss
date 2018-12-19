@@ -21,9 +21,8 @@ header .wrapper {
 .circle {
   width: 415px;
   height: 415px;
-//   border-radius: 50%;
   position: absolute;
-  top: 22%;
+  top: 18%;
   left: 25%;
    @include border-gradient($accent2, $accent2);
     animation: rotate 60s linear infinite;

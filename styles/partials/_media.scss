@@ -1,5 +1,6 @@
 @media (max-width: 860px) {
-    .fa-angle-double-down {
+  .down-noun,
+  .up-noun {
     display: none;
   }
   #about {
@@ -18,6 +19,12 @@
     .headshot {
       width: 250px;
       margin: 0 auto;
+    }
+  }
+  #skills {
+    height: auto;
+    .content {
+      padding: 50px 0;
     }
   }
 }
@@ -57,15 +64,19 @@
   }
 }
 @media (max-width: 550px) {
-  // header span {
-  // font-size: 6.5rem;
-  // }
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: 400;
+    &::after {
+      font-size: 6rem;
+      top: 0;
+      left: 157px;
+    }
   }
 
   .tagline {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    font-weight: 300;
   }
 
   form {
