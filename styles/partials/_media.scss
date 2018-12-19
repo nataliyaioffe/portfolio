@@ -1,24 +1,50 @@
-// @media (max-width: 875px) {
-//   .circle {
-//     width: 515px;
-//     height: 515px;
-//     top: -150%;
-//     left: 15%;
-//   }
-// }
+@media (max-width: 860px) {
+    .fa-angle-double-down {
+    display: none;
+  }
+  #about {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro {
+      margin-bottom: 25px;
+    }
+    .bio {
+      text-align: justify;
+      padding: 30px 0;
+      width: 80%;
+    }
+    .headshot {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
 
 @media (max-width: 750px) {
-  #projects {
+  #about,
+  #skills {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  #projects,
+  #projects2 {
+    height: auto;
     .projects-container {
       flex-direction: column;
       align-items: center;
     }
     .project {
       width: 90%;
+      padding-bottom: 25px;
       &:nth-of-type(odd) {
         margin-right: 0;
       }
     }
+  }
+  #projects2 {
+    padding-top: 0;
   }
 }
 
@@ -31,11 +57,15 @@
   }
 }
 @media (max-width: 550px) {
-  header span {
-    font-size: 6.5rem;
+  // header span {
+  // font-size: 6.5rem;
+  // }
+  h1 {
+    font-size: 5rem;
   }
-  header h2 {
-    font-size: 2.2rem;
+
+  .tagline {
+    font-size: 3rem;
   }
 
   form {
@@ -46,17 +76,10 @@
   }
 }
 
-@media (max-width: 450px) {
-  header span {
-    font-size: 5.5rem;
-  }
-  header h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 350px) {
-  header span {
-    font-size: 5rem;
+@media (max-width: 375px) {
+  #about {
+    .bio {
+      text-align: center;
+    }
   }
 }

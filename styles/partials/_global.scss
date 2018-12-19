@@ -9,7 +9,6 @@ $accent2: #ffb30e;
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -23,12 +22,13 @@ body {
   margin: 0 auto;
   position: relative;
   height: 100%;
+  // border: 1px solid black;
 }
-
+.down-noun,
 .fa-angle-double-down {
   position: absolute;
   font-size: 3rem;
-  left: 50%;
+  left: 49%;
   bottom: 50px;
   &:hover{
     color: $black;
@@ -47,4 +47,9 @@ img {
   width: 100%; 
   max-width: 100%; 
   display: block;
+}
+
+.down-noun {
+  height: 500px;
+  width: 500px;
 }

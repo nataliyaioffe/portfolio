@@ -14,26 +14,19 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Tajawal:300,400,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Tajawal:200,300,400,700"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
-
- 
     <title>Nataliya Ioffe - Web Developer</title>
   </head>
+
   <body id="home">
-  
     <div id="top-bar">
-      <!-- <h2 class="logo"> -->
-        <!-- <a href="#home">Nataliya <span class="io">Io</span>ffe</a> -->
-      <!-- </h2> -->
       <nav class="main-nav">
-        <i class="hamburger fas fa-bars"></i>
-        <i class="exit fas fa-times"></i>
+        <i class="hamburger fas fa-bars"></i> <i class="exit fas fa-times"></i>
         <ul class="list clearfix">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -41,7 +34,6 @@
         </ul>
       </nav>
     </div>
-
     <header>
       <div class="wrapper">
         <div class="circle-multiple">
@@ -49,183 +41,329 @@
           <div class="circle"></div>
           <div class="circle"></div>
         </div>
-
-          <h1>nataliya <span class="io">io</span>ffe</h1>
-          <h2 class="tagline">Front-End Web Developer</h2>
-          <a href="#about"><i class="fas fa-angle-double-down"></i></a>
-          </div>
-      </div>      
+        <h1>nataliya <span class="io">io</span>ffe</h1>
+        <h2 class="tagline">Front-End Web Developer</h2>
+        <a href="#about" class="down"><i class="fas fa-angle-double-down about"></i></a>
+        <!--
+          <a href="#about"><img class="down-noun" src="./assets/icons/noun_down arrow_447599.svg" alt=""></a>
+        -->
+      </div>
     </header>
-
     <!-- MAIN -->
     <main>
       <!-- ABOUT -->
       <section id="about">
         <div class="wrapper">
-          <div class="content">
+          <div class="content clearfix">
+
             <div class="intro">
               <h2>Hey... Nice to meet you!</h2>
-              <p><strong>I'm a Front-End Web Developer based in Toronto. </strong></p>
+              <p><strong>I'm a Front-End Web Developer based in Toronto.</strong></p>
             </div>
-            <div class="me">
-              <img src="./assets/2bootcamp.jpg" alt="">
+
+            <div class="headshot">
+              <img src="./assets/2bootcamp.jpg" alt="" />
             </div>
-            <div class="text">
-              <p>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College
-              of Technology.</p>
-            <p>I previously grew up in rural Virginia, and spent most of my adult life working Los Angeles in TV
-              production. However, a unique opportunity to work at an ultra-fast-pace tech startup inspired me to learn to code.</p>
-            <p>After settling in Toronto, I'm full-steam ahead in pursuing my passion for building memorable user experiences that make the world a better place, one click at a time. </p>
-            <!-- <a href="mailto:nxioffe@mgail.com">Let's work together!</a> -->
-            </p>
+
+            <div class="bio">
+              <p>I have a Bachelor's degree in Media Arts, as well as recent training in front-end development from HackerYou College of Technology.</p>
+              <p>Before becoming a developer, I lived in Los Angeles working in TV/Film production... and what I thought would be a short hiatus between filming shows turned into a life-changing year at a booming tech start-up.</p> 
+              <p>After swapping flip flops in LA for winter boots in TO, I'm now committed to pursuing my passion for building memorable user experiences that make the world a better place.</p>
+              </p>
+            </div>
+
           </div>
-        </div>
-          <a href="#skills"><i class="fas fa-angle-double-down"></i></a>
+
+          <a href="#skills" class="down"><i class="fas fa-angle-double-down"></i></a>
         </div>
       </section>
       <!-- SKILLS -->
       <section id="skills">
         <div class="wrapper">
           <div class="content">
-            <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Skills</h2>
+            <h2
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+            >
+              My Skills
+            </h2>
             <ul class="icons">
-                <li>
-                  <i class="fab fa-html5" aria-hidden=“true”></i>
-                  <h4>HTML5</h4></li>
-                <li>
-                  <i class="fab fa-css3-alt" aria-hidden=“true”></i>
-                  <h4>CSS3</h4></li>
-                <li>
-                  <i class="fab fa-sass" aria-hidden=“true”></i>
-                  <h4>SASS</h4>
-                </li>
-                <li>
-                  <i class="fab fa-js" aria-hidden=“true”></i>
-                  <h4>ES6</h4></li>
-                <li><img src="./assets/icons/jquery.svg" alt="Icon for JQuery.">
-                  <h4>JQuery</h4>
-                </li>
-                <li><i class="fab fa-react" aria-hidden=“true”></i>
-                  <h4>React</h4>
-                </li>
-                <li>
-                  <i class="fab fa-github" aria-hidden=“true”></i>
-                  <h4>Github</h4> </li>
-                <li>
-                  <i class="fas fa-terminal" aria-hidden=“true></i>
-                  <h4>Terminal</h4></li>
-                <li>
-                  <img src="./assets/icons/firebase.svg" alt="Icon for Firebase.">
-                  <h4>Firebase</h4>
-                </li>
-                <li>
-                  <img src="./assets/icons/vscode.svg" alt="Icon for Visual Studio Code.">
-                  <h4>VSCode</h4>
-                </li>
-                <li>
-                  <img src="./assets/icons/responsive-design.svg" alt="Icon for Responsive Design.">
-                  <h4>Responsive</h4>
-                </li>
-              </ul>
-            </div>
-          <a href="#projects">
+              <li>
+                <i class="fab fa-html5" aria-hidden="“true”"></i>
+                <h4>HTML5</h4>
+              </li>
+              <li>
+                <i class="fab fa-css3-alt" aria-hidden="“true”"></i>
+                <h4>CSS3</h4>
+              </li>
+              <li>
+                <i class="fab fa-sass" aria-hidden="“true”"></i>
+                <h4>SASS</h4>
+              </li>
+              <li>
+                <i class="fab fa-js" aria-hidden="“true”"></i>
+                <h4>ES6</h4>
+              </li>
+              <li>
+                <img src="./assets/icons/jquery.svg" alt="Icon for JQuery." />
+                <h4>JQuery</h4>
+              </li>
+              <li>
+                <i class="fab fa-react" aria-hidden="“true”"></i>
+                <h4>React</h4>
+              </li>
+              <li>
+                <i class="fab fa-github" aria-hidden="“true”"></i>
+                <h4>Github</h4>
+              </li>
+              <li>
+                <i class="fas fa-terminal" aria-hidden="“true"></i>
+                <h4>Terminal</h4>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/firebase.svg"
+                  alt="Icon for Firebase."
+                />
+                <h4>Firebase</h4>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/vscode.svg"
+                  alt="Icon for Visual Studio Code."
+                />
+                <h4>VSCode</h4>
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/responsive-design.svg"
+                  alt="Icon for Responsive Design."
+                />
+                <h4>Responsive</h4>
+              </li>
+            </ul>
+          </div>
+          <a href="#projects" class="down">
             <i class="fas fa-angle-double-down"></i>
           </a>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="wrapper">
-          <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">My Work</h2>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="wrapper">
+          <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
+            My Work
+          </h2>
           <!-- Project1 -->
           <div class="projects-container">
-            <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
+            <div
+              class="project"
+              data-aos-anchor-placement="top"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+            >
               <div class="mockup">
-                <img src="./assets/screenshots/gym.png" alt="Macbook Pro displaying header of Project.">
+                <img
+                  src="./assets/screenshots/gym.png"
+                  alt="Macbook Pro displaying header of Project."
+                />
                 <!-- screenshot -->
               </div>
               <div class="description">
                 <h3>Flex Fitness</h3>
-                <p class="project-skills">React / Firebase / Javascript / CSS/SASS / HTML / Responsive</p>
-                <p>A React app which allows users to build custom workout routines and track their progress at the gym. Made with Emma Hughes and Kyle Collins.</p>
-                <a class="view" href="https://gym-gordon.firebaseapp.com/" target="_blank">Live</a>
-                <a class="view" href="#">Github</a>
+                <p class="project-skills">
+                  React / Firebase / JavaScript / SASS / Responsive
+                </p>
+                <p>
+                  A React app which allows users to build custom workout
+                  routines and track their progress at the gym. Made with Emma
+                  Hughes and Kyle Collins.
+                </p>
+                <a
+                  class="view"
+                  href="https://gym-gordon.firebaseapp.com/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="view"
+                  href="https://github.com/nataliyaioffe/project6_nataliya_kyle_emma"
+                  target="_blank"
+                  >Github</a
+                >
               </div>
             </div>
             <!-- Project2 -->
-            <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1100">
+            <div
+              class="project"
+              data-aos-anchor-placement="top"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+            >
               <div class="mockup">
-                <img src="./assets/screenshots/bomb.png" alt="Macbook Pro displaying header of Project.">
+                <img
+                  src="./assets/screenshots/bomb.png"
+                  alt="Macbook Pro displaying header of Project."
+                />
               </div>
               <div class="description">
                 <h3>Bomb Dot Com</h3>
-                <p class="project-skills">Javascript / JQuery / API / CSS/SASS / HTML / Responsive</p>
-                <p>Players must race against the clock to defuse a ticking bomb -- by correctly answering trivia questions from the Open Trivia DB API. Made in collaboration with Scott Fuller.</p>
-                <a class="view" href="http://www.nataliya.io/bombdotcom" target="_blank">Live</a>
-                <a class="view" href="#">Github</a>
+                <p class="project-skills">
+                  JavaScript / JQuery / API / SASS / Responsive
+                </p>
+                <p>
+                  Players must race against the clock to defuse a ticking bomb
+                  -- by correctly answering trivia questions from the Open
+                  Trivia DB API. Made in collaboration with Scott Fuller.
+                </p>
+                <a
+                  class="view"
+                  href="http://www.nataliya.io/bombdotcom"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="view"
+                  href="https://github.com/nataliyaioffe/project4_nataliya_scott"
+                  target="_blank"
+                  >Github</a
+                >
               </div>
             </div>
+            <a href="#projects2" class="down">
+              <i class="fas fa-angle-double-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="projects2">
+        <div class="wrapper">
+          <div class="projects-container">
             <!-- Project3 -->
-            <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1100">
+            <div
+              class="project"
+              data-aos-anchor-placement="top"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+            >
               <div class="mockup">
-                
-                <img src="./assets/screenshots/hp.png" alt="Macbook Pro displaying header of Project.">
+                <img
+                  src="./assets/screenshots/hp.png"
+                  alt="Macbook Pro displaying header of Project."
+                />
               </div>
               <div class="description">
                 <h3>The Sorting Hat</h3>
-                <p class="project-skills">React / Javascript / API / CSS/SASS / HTML / Responsive</p>
-                <p>Powered by the Harry Potter API, this React app sorts users into Hogwarts houses and directs them to dashboards with personalized details including other sorted housemates.</p>
-                <a class="view" href="https://harry-potter-7e981.firebaseapp.com/" target="_blank">Live</a>
-                <a class="view" href="#">Github</a>
+                <p class="project-skills">
+                  React / JavaScript / API / SASS / Responsive
+                </p>
+                <p>
+                  Powered by the Harry Potter API, this React app sorts users
+                  into Hogwarts houses and directs them to dashboards with
+                  personalized details including other sorted housemates.
+                </p>
+                <a
+                  class="view"
+                  href="https://harry-potter-7e981.firebaseapp.com/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  class="view"
+                  href="https://github.com/nataliyaioffe/nataliya_ioffe_project5"
+                  target="_blank"
+                  >Github</a
+                >
               </div>
             </div>
             <!-- Project4 -->
-            <div class="project" data-aos-anchor-placement="top" data-aos="zoom-in" data-aos-delay="1600" data-aos-duration="1100">
+            <div
+              class="project"
+              data-aos-anchor-placement="top"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+            >
               <div class="mockup">
-                <img src="./assets/screenshots/shutter.png" alt="Macbook Pro displaying header of Project.">
+                <img
+                  src="./assets/screenshots/shutter.png"
+                  alt="Macbook Pro displaying header of Project."
+                />
               </div>
               <div class="description">
                 <h3>Shutter</h3>
-                <p class="project-skills">CSS/SASS / HTML / Responsive / PSD</p>
-                <p>A clean, pixel-perfect conversion of a Photoshop design. Layout achieved using floats and media queries. </p>
-                <a class="view" href="http://www.nataliya.io/shutter" target="_blank">Live</a>
+                <p class="project-skills">SASS / Responsive / PSD</p>
+                <p>
+                  A clean, pixel-perfect conversion of a provided Photoshop design. This seamless single-page layout was achieved using CSS float properties and media queries.
+                </p>
+                <a
+                  class="view"
+                  href="http://www.nataliya.io/shutter"
+                  target="blank"
+                  >Live</a
+                >
                 <a class="view" href="#">Github</a>
               </div>
             </div>
+            <a href="#contact" class="down"
+              ><i class="fas fa-angle-double-down"></i
+            ></a>
           </div>
-        <!-- <a href="#contact"><i class="fas fa-angle-double-down"></i></a> -->
-      </div>
-    </section>
+        </div>
+      </section>
     </main>
     <!-- END MAIN -->
-
     <footer id="contact">
       <div class="wrapper">
-          <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">Contact Me</h2>
-          <a class="email" href="mailto:nxioffe@gmail.com">nxioffe <span>[at]</span> gmail <span>[dot]</span> com</a>
-          <div class="icons">
-            <i class="fab fa-twitter"></i> 
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-          <form action="https://formspree.io/nxioffe@gmail.com" method="POST" />
-            <label for="name">Name*</label>
-            <input required id="name" name="name"  type="text">
-            <label for="email">Email*</label>
-            <input required id="email" name="email" type="email">
-            <label for="email">Message*</label>
-            <textarea required  id="message" name="message" cols="30" rows="3"></textarea>
-            <input type="submit" value="Send">
-          </form>
-          <a class="top" href="#home"><i class="fas fa-angle-double-up"></i></a>
-          <p class="copyright">Nataliya Ioffe &copy; 2018</p>
+        <h2 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1100">
+          Contact Me
+        </h2>
+        <a class="email" href="mailto:hello@nataliya.io">hello@nataliya.io</a>
+        <ul class="icons">
+          <li>
+            <a href="https://twitter.com/nataliyaioffe">
+              <i class="fab fa-twitter" aria-hidden="“true”"></i>
+              <span class="sr-only">Twitter</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/nataliyaioffe">
+              <i class="fab fa-github" aria-hidden="“true”"></i>
+              <span class="sr-only">Github</span></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nataliya-ioffe-54377b8/">
+              <i class="fab fa-linkedin-in" aria-hidden="“true”"></i>
+              <span class="sr-only">LinkedIn</span></a>
+          </li>
+        </ul>
+        <form action="https://formspree.io/nxioffe@gmail.com" method="POST">
+          <label for="name">Name*</label>
+          <input required id="name" name="name" type="text" />
+          <label for="email">Email*</label>
+          <input required id="email" name="email" type="email" />
+          <label for="email">Message*</label>
+          <textarea
+            required
+            id="message"
+            name="message"
+            cols="30"
+            rows="3"
+          ></textarea>
+          <input type="submit" value="Send" />
+        </form>
+        <a class="top" href="#home"><i class="fas fa-angle-double-up"></i></a>
+        <p class="copyright">Nataliya Ioffe &copy; 2018</p>
       </div>
     </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="./scripts.js"></script>
   </body>

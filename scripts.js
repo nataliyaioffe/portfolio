@@ -5,52 +5,54 @@ const app = {};
 // Doc Ready
 $(function() {
   app.init();
+
+
+  
 });
+// end document ready
 
 app.init = function() {
-  // window.onscroll();
   app.menu();
-  
+  $(".down").smoothScroll({ speed: 800 });
+  $(".top").smoothScroll({ speed: 800 });
 
 
 
-  // $('button.scrollsomething').on('click', function () {
-  //   $.smoothScroll({ 
-  //     speed: 2000 
-  //   });
-  //   return false;
-  // });
-
-
-  // $(".fa-angle-double-down").smoothScroll();
-
-
-  // $(".fa-angle-double-down").on("click", function(e) {
-  //   if (app.scrollCount < 5) {
-  //     app.scrollCount++
-  //   } else {
-  //     app.scrollCount = 1;
-  //   }
-  //   console.log(app.scrollCount);
-  //   $("html, body").animate({ scrollTop: $(seci).offset().top}, 1000);
-  // });
 
 }
+// end init
 
-// app.scrollCount = 0;
+
+
+
+
+
 
 app.menu = function() {
   $(".hamburger").on("click", function() {
-    $(".list").toggleClass("hidden");
-    $(".hamburger").toggleClass("hide");
-    $(".exit").toggleClass("hidden");
+    app.dropdown()
   });
+
   $(".exit").on("click", function() {
-    $(".list").toggleClass("hidden");
-    $(".hamburger").toggleClass("hide");
-    $(".exit").toggleClass("hidden");
+    app.dropdown()
   });
 };
+
+app.dropdown = function() {
+  $(".list").toggleClass("hidden");
+  $(".hamburger").toggleClass("hide");
+  $(".exit").toggleClass("hidden");
+}
+
+
+
+
+
+$(document).on('click', '.navbar-collapse.in', function (e) {
+  if ($(e.target).is('a')) {
+    $(this).collapse('hide');
+  }
+});
 
 // window.onscroll = function () {
 //   console.log("onscroll");
