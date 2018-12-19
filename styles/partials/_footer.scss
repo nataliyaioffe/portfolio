@@ -15,6 +15,9 @@ footer {
     font-size: 1.8rem;
     color: $black;
     font-weight: 500;
+    &:hover{
+      color: $accent;
+    }
   }
   .up {
     display: inline-block;

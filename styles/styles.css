@@ -586,6 +586,8 @@ footer {
     font-size: 1.8rem;
     color: #181717;
     font-weight: 500; }
+    footer .email:hover {
+      color: #fa8072; }
   footer .up {
     display: inline-block; }
   footer .icons {
@@ -718,6 +720,11 @@ form {
     width: 100%; }
     form label {
       text-align: center; } }
+
+@media (max-width: 435px) {
+  #about h2 {
+    line-height: 1;
+    font-size: 2.6rem; } }
 
 @media (max-width: 375px) {
   #about .bio {
