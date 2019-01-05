@@ -11,21 +11,21 @@
               1px -1px rgba($mix-main, .05),
               -1px 1px rgba($mix-main, .55),
               1px 1px rgba($to, .55),
-              -1px -1px rgba($from, .55),
+              -1px -1px rgba($from, .55);
 }
 
 header .wrapper {
   position: relative;
 }
 
-.circle {
+.square {
   width: 415px;
   height: 415px;
   position: absolute;
   top: 18%;
   left: 25%;
    @include border-gradient($accent2, $accent2);
-    animation: rotate 60s linear infinite;
+    animation: rotate 30s linear infinite;
   &:nth-of-type(2) {
     @include border-gradient($accent, $accent);
     animation: rotate2 30s linear infinite;
@@ -38,11 +38,11 @@ header .wrapper {
   }
   
   
-  &-multiple & {
+  // &-multiple & {
     // &:nth-of-type(1) { animation: psycho 15s linear infinite; }
     // &:nth-of-type(2) { animation: psycho 10s linear .30s infinite; }
     // &:nth-of-type(3) { animation: psycho 15s linear .25s infinite; }
-  }
+  // }
  
 }
 

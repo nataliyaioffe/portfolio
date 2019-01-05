@@ -20,8 +20,6 @@ header,
   }
   .bio {
     text-align: left;
-    padding-top: 30px;
-    // border: 1px solid red;
   }
   .content {
     display: flex;
@@ -31,9 +29,10 @@ header,
     margin: 0 auto;
   }
   .headshot {
+    padding-bottom: 25px;
     position: relative;
     img {
-      border: 2px solid black;
+      border: 2px solid $accent2;
     }
   }
   .headshot,
@@ -41,27 +40,6 @@ header,
     width: calc(50% - 30px);
     margin: 0 10px;
   }
-}
-
-.headshot::before,
-.headshot::after {
-  content: "";
-  position: absolute;
-  width: 185px;
-  height: 185px;
-  z-index: -20;
-}
-
-.headshot::before {
-  border: 2px solid $accent2;
-  top: 0;
-  left: 0;
-}
-
-.headshot::after {
-  border: 2px solid $accent;
-  top: -10px;
-  left: -20px;
 }
 
 //////// SKILLS ////////

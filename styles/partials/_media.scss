@@ -9,6 +9,41 @@
   .up-noun {
     display: none;
   }
+  // #about {
+  //   .content {
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
+  //   .intro {
+  //     margin-bottom: 25px;
+  //   }
+  //   .bio {
+  //     text-align: center;
+  //     width: 100%;
+  //     margin: 0;
+  //   }
+  //   .headshot {
+  //     width: 250px;
+  //     margin: 0 auto;
+  //   }
+  // }
+  #skills {
+    // height: auto;
+    .content {
+      padding: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    &:hover::after {
+      animation: none !important;
+    }
+    &:hover::before {
+      animation: none !important;
+    }
+  }
   #about {
     .content {
       flex-direction: column;
@@ -18,7 +53,7 @@
       margin-bottom: 25px;
     }
     .bio {
-      text-align: justify;
+      text-align: center;
       width: 100%;
       margin: 0;
     }
@@ -27,15 +62,6 @@
       margin: 0 auto;
     }
   }
-  #skills {
-    // height: auto;
-    .content {
-      padding: 50px 0;
-    }
-  }
-}
-
-@media (max-width: 750px) {
   #about,
   #skills {
     height: auto;
@@ -106,10 +132,10 @@
   }
 }
 
-@media (max-width: 375px) {
-  #about {
-    .bio {
-      text-align: left;
-    }
-  }
-}
+// @media (max-width: 375px) {
+//   #about {
+//     .bio {
+//       text-align: left;
+//     }
+//   }
+// }

@@ -203,7 +203,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 8rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: .75;
   letter-spacing: -4px;
   text-transform: lowercase;
@@ -214,7 +214,7 @@ h1 {
     color: #181717;
     font-size: 8rem;
     top: 0;
-    left: 212px; }
+    left: 219px; }
   h1 .io {
     color: #fa8072; }
 
@@ -357,7 +357,7 @@ header {
 header .wrapper {
   position: relative; }
 
-.circle {
+.square {
   width: 415px;
   height: 415px;
   position: absolute;
@@ -365,14 +365,14 @@ header .wrapper {
   left: 25%;
   -webkit-box-shadow: 0 1px rgba(255, 179, 14, 0.05), 0 -1px rgba(255, 179, 14, 0.55), 1px 0 rgba(255, 179, 14, 0.55), -1px 0 rgba(255, 179, 14, 0.55), 1px -1px rgba(255, 179, 14, 0.05), -1px 1px rgba(255, 179, 14, 0.55), 1px 1px rgba(255, 179, 14, 0.55), -1px -1px rgba(255, 179, 14, 0.55);
   box-shadow: 0 1px rgba(255, 179, 14, 0.05), 0 -1px rgba(255, 179, 14, 0.55), 1px 0 rgba(255, 179, 14, 0.55), -1px 0 rgba(255, 179, 14, 0.55), 1px -1px rgba(255, 179, 14, 0.05), -1px 1px rgba(255, 179, 14, 0.55), 1px 1px rgba(255, 179, 14, 0.55), -1px -1px rgba(255, 179, 14, 0.55);
-  -webkit-animation: rotate 60s linear infinite;
-  animation: rotate 60s linear infinite; }
-  .circle:nth-of-type(2) {
+  -webkit-animation: rotate 30s linear infinite;
+  animation: rotate 30s linear infinite; }
+  .square:nth-of-type(2) {
     -webkit-box-shadow: 0 1px rgba(250, 128, 114, 0.05), 0 -1px rgba(250, 128, 114, 0.55), 1px 0 rgba(250, 128, 114, 0.55), -1px 0 rgba(250, 128, 114, 0.55), 1px -1px rgba(250, 128, 114, 0.05), -1px 1px rgba(250, 128, 114, 0.55), 1px 1px rgba(250, 128, 114, 0.55), -1px -1px rgba(250, 128, 114, 0.55);
     box-shadow: 0 1px rgba(250, 128, 114, 0.05), 0 -1px rgba(250, 128, 114, 0.55), 1px 0 rgba(250, 128, 114, 0.55), -1px 0 rgba(250, 128, 114, 0.55), 1px -1px rgba(250, 128, 114, 0.05), -1px 1px rgba(250, 128, 114, 0.55), 1px 1px rgba(250, 128, 114, 0.55), -1px -1px rgba(250, 128, 114, 0.55);
     -webkit-animation: rotate2 30s linear infinite;
     animation: rotate2 30s linear infinite; }
-  .circle:nth-of-type(3) {
+  .square:nth-of-type(3) {
     -webkit-box-shadow: 0 1px rgba(255, 179, 14, 0.05), 0 -1px rgba(255, 179, 14, 0.55), 1px 0 rgba(255, 179, 14, 0.55), -1px 0 rgba(255, 179, 14, 0.55), 1px -1px rgba(255, 179, 14, 0.05), -1px 1px rgba(255, 179, 14, 0.55), 1px 1px rgba(255, 179, 14, 0.55), -1px -1px rgba(255, 179, 14, 0.55);
     box-shadow: 0 1px rgba(255, 179, 14, 0.05), 0 -1px rgba(255, 179, 14, 0.55), 1px 0 rgba(255, 179, 14, 0.55), -1px 0 rgba(255, 179, 14, 0.55), 1px -1px rgba(255, 179, 14, 0.05), -1px 1px rgba(255, 179, 14, 0.55), 1px 1px rgba(255, 179, 14, 0.55), -1px -1px rgba(255, 179, 14, 0.55);
     -webkit-animation: rotate 30s linear infinite;
@@ -464,8 +464,7 @@ header,
     margin-bottom: 0; }
 
 #about .bio {
-  text-align: left;
-  padding-top: 30px; }
+  text-align: left; }
 
 #about .content {
   display: -webkit-box;
@@ -480,32 +479,15 @@ header,
   margin: 0 auto; }
 
 #about .headshot {
+  padding-bottom: 25px;
   position: relative; }
   #about .headshot img {
-    border: 2px solid black; }
+    border: 2px solid #ffb30e; }
 
 #about .headshot,
 #about .bio {
   width: calc(50% - 30px);
   margin: 0 10px; }
-
-.headshot::before,
-.headshot::after {
-  content: "";
-  position: absolute;
-  width: 185px;
-  height: 185px;
-  z-index: -20; }
-
-.headshot::before {
-  border: 2px solid #ffb30e;
-  top: 0;
-  left: 0; }
-
-.headshot::after {
-  border: 2px solid #fa8072;
-  top: -10px;
-  left: -20px; }
 
 #skills .content {
   padding-top: 150px; }
@@ -665,6 +647,16 @@ form {
   .down-noun,
   .up-noun {
     display: none; }
+  #skills .content {
+    padding: 50px 0; } }
+
+@media (max-width: 768px) {
+  .main-nav:hover::after {
+    -webkit-animation: none !important;
+    animation: none !important; }
+  .main-nav:hover::before {
+    -webkit-animation: none !important;
+    animation: none !important; }
   #about .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -676,16 +668,12 @@ form {
   #about .intro {
     margin-bottom: 25px; }
   #about .bio {
-    text-align: justify;
+    text-align: center;
     width: 100%;
     margin: 0; }
   #about .headshot {
     width: 250px;
     margin: 0 auto; }
-  #skills .content {
-    padding: 50px 0; } }
-
-@media (max-width: 750px) {
   #about,
   #skills {
     height: auto; }
@@ -738,7 +726,3 @@ form {
     font-size: 2.6rem; }
   #skills .icons i {
     font-size: 6rem; } }
-
-@media (max-width: 375px) {
-  #about .bio {
-    text-align: left; } }
